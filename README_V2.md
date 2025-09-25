@@ -41,7 +41,7 @@ package main
 
 import (
     "context"
-    "github.com/vineroute/vinequeue"
+    "github.com/putao520/vinequeue"
 )
 
 func main() {
