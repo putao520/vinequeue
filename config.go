@@ -67,3 +67,18 @@ func (c *Config) Validate() error {
 	}
 	return nil
 }
+
+// V4Config 返回V4架构优化配置（测试用）
+func V4Config() Config {
+	return Config{
+		MemorySize:    50000,
+		WALPath:       "./v4_vinequeue.wal",
+		WALMaxSize:    524288000, // 500MB
+		WALSyncMode:   "periodic",
+		BatchSize:     1000,
+		FlushTimeout:  5 * time.Second,
+		SendTimeout:   10 * time.Second,
+		RetryLimit:    3,
+		EnableMetrics: true,
+	}
+}

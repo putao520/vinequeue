@@ -289,8 +289,8 @@ func TestMetrics(t *testing.T) {
 	}
 }
 
-// BenchmarkEnqueue 基准测试入队性能
-func BenchmarkEnqueue(b *testing.B) {
+// BenchmarkBasicEnqueue 基准测试入队性能
+func BenchmarkBasicEnqueue(b *testing.B) {
 	config := DefaultConfig()
 	config.MemorySize = 100000
 	config.WALPath = "./benchmark.wal"
