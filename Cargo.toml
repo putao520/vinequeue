@@ -2,6 +2,11 @@
 name = "vinequeue"
 version = "0.1.0"
 edition = "2021"
+description = "High-performance async queue library with disk persistence"
+license = "MIT"
+repository = "https://github.com/putao520/vinequeue"
+keywords = ["queue", "async", "persistence", "wal", "batch"]
+categories = ["asynchronous", "concurrency", "data-structures"]
 
 [dependencies]
 serde = { version = "1.0", features = ["derive"] }
